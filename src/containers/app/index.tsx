@@ -1,10 +1,11 @@
 import React from 'react';
+import { Feedback } from '../feedback'
 
 function App() {
   return (
-    <div className="App">
-      Serasa feedack form
-    </div>
+    <main>
+      <Feedback />
+    </main>
   );
 }
 
