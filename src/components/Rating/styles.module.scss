@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+  justify-content: space-around;
+  font-size: 32px;
+  border: none;
+  background-color: inherit;
+
+  &.-checked {
+    color: orange;
+  }
+}
