@@ -1,16 +1,17 @@
 import React from "react";
 import styles from './styles.module.scss'
 
-interface Props extends React.HTMLAttributes<HTMLButtonElement> {
+export interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   label: string;
+  [k: string]: any
 }
 
 export const Button: React.FC<Props> = ({ onClick, label, ...props }) => {
   return (
     <button
-      {...props}
       onClick={onClick}
       className={styles['btn']}
+      {...props}
     >
       { label }
     </button>
